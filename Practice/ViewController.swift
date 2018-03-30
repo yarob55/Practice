@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         requestPosts(url : baseUrl+postsUrl)
         print("retreiving the data")
         print("new feature")
+        print("feature 2")
     }
 
     override func didReceiveMemoryWarning() {
