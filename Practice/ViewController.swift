@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         print("f 5")
         print("f6")
         print("f7")
+        print("f8")
         print("f9")
     }
 
