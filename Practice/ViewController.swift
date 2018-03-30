@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         print("retreiving the data")
         print("new feature")
         print("feature 2")
+        print("feature 3")
     }
 
     override func didReceiveMemoryWarning() {
