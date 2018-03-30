@@ -145,7 +145,7 @@
 			children = (
 				49F40834206D959700DA88A7 /* AppDelegate.swift */,
 				49F40836206D959700DA88A7 /* ViewController.swift */,
-				49F40868206E873300DA88A7 /* PostRequest.swift */,
+				49F4086A206E87BC00DA88A7 /* Services */,
 				49F40866206E746300DA88A7 /* Class1.swift */,
 				49F40864206E724A00DA88A7 /* Class2.swift */,
 				49F40838206D959700DA88A7 /* Main.storyboard */,
@@ -172,6 +172,14 @@
 				49F40856206D959800DA88A7 /* Info.plist */,
 			);
 			path = PracticeUITests;
+			sourceTree = "<group>";
+		};
+		49F4086A206E87BC00DA88A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				49F40868206E873300DA88A7 /* PostRequest.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
