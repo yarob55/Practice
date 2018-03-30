@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         requestPosts(url : baseUrl+postsUrl)
         print("retreiving the data")
+        print("new feature")
     }
 
     override func didReceiveMemoryWarning() {
