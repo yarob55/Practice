@@ -19,6 +19,7 @@
 		49F40867206E746300DA88A7 /* Class1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F40866206E746300DA88A7 /* Class1.swift */; };
 		49F40869206E873300DA88A7 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F40868206E873300DA88A7 /* PostRequest.swift */; };
 		A857B4B3A457B5AEF95875F4 /* Pods_PracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC709968C1A8CF42CBE0A62 /* Pods_PracticeUITests.framework */; };
+		D6766839207416D800DF17B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6766838207416D800DF17B6 /* SecondViewController.swift */; };
 		FD93E275BCBDA878154EC630 /* Pods_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAA939AF7A8ECF134CA687E /* Pods_Practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		8EC76160810C1EF48F0CD43A /* Pods-PracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PracticeUITests/Pods-PracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B7C16490609CBCFB7B6671FA /* Pods-PracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PracticeTests/Pods-PracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		CAC709968C1A8CF42CBE0A62 /* Pods_PracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6766838207416D800DF17B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EC5A091D1C05BAB7B4065169 /* Pods-PracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PracticeTests/Pods-PracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 		49F40828206D959700DA88A7 = {
 			isa = PBXGroup;
 			children = (
+				D676683A2074DCAE00DF17B6 /* View */,
 				49F40833206D959700DA88A7 /* Practice */,
 				49F40848206D959800DA88A7 /* PracticeTests */,
 				49F40853206D959800DA88A7 /* PracticeUITests */,
@@ -145,6 +148,7 @@
 			children = (
 				49F40834206D959700DA88A7 /* AppDelegate.swift */,
 				49F40836206D959700DA88A7 /* ViewController.swift */,
+				D6766838207416D800DF17B6 /* SecondViewController.swift */,
 				49F40868206E873300DA88A7 /* PostRequest.swift */,
 				49F40866206E746300DA88A7 /* Class1.swift */,
 				49F40864206E724A00DA88A7 /* Class2.swift */,
@@ -172,6 +176,13 @@
 				49F40856206D959800DA88A7 /* Info.plist */,
 			);
 			path = PracticeUITests;
+			sourceTree = "<group>";
+		};
+		D676683A2074DCAE00DF17B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,10 +350,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Practice/Pods-Practice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6766839207416D800DF17B6 /* SecondViewController.swift in Sources */,
 				49F40865206E724A00DA88A7 /* Class2.swift in Sources */,
 				49F40837206D959700DA88A7 /* ViewController.swift in Sources */,
 				49F40869206E873300DA88A7 /* PostRequest.swift in Sources */,

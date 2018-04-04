@@ -18,8 +18,26 @@ struct Post:Decodable
 
 import UIKit
 import Alamofire
+import Hero
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell();
+        cell.textLabel?.text = String(indexPath.row)
+        return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "display")
+        vc?.hero.isEnabled = true
+        tableView.hero.id = "ironMan"
+        navigationController?.pushViewController(vc!, animated: true)
+    }
+    
     
     let baseUrl = "https://jsonplaceholder.typicode.com"
     let postsUrl = "/posts"

@@ -1,12 +1,21 @@
 PODS:
   - Alamofire (4.7.0)
+  - Hero (1.1.0)
+  - Spring (1.0.5)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
+  - Alamofire
+  - Hero
+  - Spring
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
+  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 8644afe3373d020efabf6d741cb608cd8d060ad6
+PODFILE CHECKSUM: 27b55b25310806fe5efbf16491f45df9f868dadc
 
 COCOAPODS: 1.4.0
