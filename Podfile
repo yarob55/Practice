@@ -6,6 +6,7 @@ target 'Practice' do
   use_frameworks!
 
    pod 'Alamofire', '~> 4.7'
+   pod 'FoldingCell'
 
   target 'PracticeTests' do
     inherit! :search_paths

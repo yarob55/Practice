@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.7.0)
+  - FoldingCell (3.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - FoldingCell
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  FoldingCell: 18daed710910823bc8457c3fba076a2408f21f0e
 
-PODFILE CHECKSUM: 8644afe3373d020efabf6d741cb608cd8d060ad6
+PODFILE CHECKSUM: b616668326951292b3d4e46d91ebf8e33821e2a0
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0
