@@ -62,6 +62,8 @@ class MyTableViewController: UITableViewController {
         
         //cell.setup(thePost:posts[indexPath.row])
         
+        cell.priceBtn.tag = indexPath.row
+        cell.priceBtn.addTarget(self, action: #selector(priceBtnTapped(_:)), for: .touchUpInside)
         cell.setupColor(index: indexPath.row)
         return cell
     }
@@ -69,6 +71,18 @@ class MyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+    }
+    
+    @objc func priceBtnTapped(_ btn: UIButton){
+        performSegue(withIdentifier: "PriceDetails", sender: Color.colors[btn.tag%Color.colors.count])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PriceDetails" {
+            if let vc = segue.destination as? PriceDetailsViewController {
+                vc.primaryColor = sender as! UIColor
+            }
+        }
     }
  
 

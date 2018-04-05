@@ -11,6 +11,7 @@ import UIKit
  @IBDesignable class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var priceBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -33,6 +34,10 @@ import UIKit
     {
         
         self.cellBar.backgroundColor = Color.colors[index%Color.colors.count]
+    }
+    
+    @IBAction func priceBtnTapped(_ sender: Any) {
+        
     }
 
 }

@@ -15,7 +15,7 @@
 		499048E82073CFDF00855EED /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499048E72073CFDF00855EED /* BarView.swift */; };
 		499048EA2073D06E00855EED /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499048E92073D06E00855EED /* MyTableViewController.swift */; };
 		499048EC2073D6ED00855EED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499048EB2073D6ED00855EED /* Extensions.swift */; };
-		49A1E17D2076382600C84D28 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1E17C2076382500C84D28 /* Colors.swift */; };
+		49A1E17D2076382600C84D28 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1E17C2076382500C84D28 /* Color.swift */; };
 		49F40835206D959700DA88A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F40834206D959700DA88A7 /* AppDelegate.swift */; };
 		49F40837206D959700DA88A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F40836206D959700DA88A7 /* ViewController.swift */; };
 		49F4083A206D959700DA88A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F40838206D959700DA88A7 /* Main.storyboard */; };
@@ -25,6 +25,7 @@
 		49F40855206D959800DA88A7 /* PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F40854206D959800DA88A7 /* PracticeUITests.swift */; };
 		49F40869206E873300DA88A7 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F40868206E873300DA88A7 /* PostRequest.swift */; };
 		A857B4B3A457B5AEF95875F4 /* Pods_PracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC709968C1A8CF42CBE0A62 /* Pods_PracticeUITests.framework */; };
+		D63E10A32076406D000C202A /* PriceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E10A22076406D000C202A /* PriceDetailsViewController.swift */; };
 		FD93E275BCBDA878154EC630 /* Pods_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAA939AF7A8ECF134CA687E /* Pods_Practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +56,7 @@
 		499048E72073CFDF00855EED /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		499048E92073D06E00855EED /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		499048EB2073D6ED00855EED /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		49A1E17C2076382500C84D28 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		49A1E17C2076382500C84D28 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		49F40831206D959700DA88A7 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F40834206D959700DA88A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49F40836206D959700DA88A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		8EC76160810C1EF48F0CD43A /* Pods-PracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PracticeUITests/Pods-PracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B7C16490609CBCFB7B6671FA /* Pods-PracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PracticeTests/Pods-PracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		CAC709968C1A8CF42CBE0A62 /* Pods_PracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63E10A22076406D000C202A /* PriceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDetailsViewController.swift; sourceTree = "<group>"; };
 		EC5A091D1C05BAB7B4065169 /* Pods-PracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PracticeTests/Pods-PracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				499048E92073D06E00855EED /* MyTableViewController.swift */,
+				D63E10A22076406D000C202A /* PriceDetailsViewController.swift */,
 				49F40836206D959700DA88A7 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -162,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				499048EB2073D6ED00855EED /* Extensions.swift */,
-				49A1E17C2076382500C84D28 /* Colors.swift */,
+				49A1E17C2076382500C84D28 /* Color.swift */,
 				49F40834206D959700DA88A7 /* AppDelegate.swift */,
 			);
 			path = Extra;
@@ -530,7 +533,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				499048E82073CFDF00855EED /* BarView.swift in Sources */,
-				49A1E17D2076382600C84D28 /* Colors.swift in Sources */,
+				49A1E17D2076382600C84D28 /* Color.swift in Sources */,
+				D63E10A32076406D000C202A /* PriceDetailsViewController.swift in Sources */,
 				49F40837206D959700DA88A7 /* ViewController.swift in Sources */,
 				499048EA2073D06E00855EED /* MyTableViewController.swift in Sources */,
 				499048E22073C2FF00855EED /* CustomizableView.swift in Sources */,
