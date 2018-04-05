@@ -7,6 +7,7 @@ target 'Practice' do
 
    pod 'Alamofire', '~> 4.7'
    pod 'FoldingCell'
+   pod 'SwiftyJSON'
 
   target 'PracticeTests' do
     inherit! :search_paths

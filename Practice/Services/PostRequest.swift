@@ -8,32 +8,37 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
+
 class PostRequest
 {
     let baseUrl = "https://jsonplaceholder.typicode.com"
     let postsUrl = "/posts"
     
-    func request(url : String)
+    
+    //the best code for the request : 
+    func request(url : String, callback : @escaping (_ post:[Post])->Void)
     {
         let url = URL(string:url)
         Alamofire.request(url!).responseJSON { (response) in
-            if let result = response.data
+            switch response.result
             {
-                print(result)
+            case .success(let val):
+                let json = JSON(val)
+                let data = json["data"]
+                print(data," is the data :)")
+                var posts = [Post]()
+                for row in json
+                {
+                    var post = Post()
+                    let title = row.1["title"].stringValue
+                    post.title = title
+                    posts.append(post)
+                }
+                callback(posts)
                 
-//                do
-//                {
-//                    self.posts = try JSONDecoder().decode([Post].self,from:result)
-//                    for post in self.posts
-//                    {
-//                        print(post.title,":",post.body,":",post.id,":",post.userId)
-//                    }
-//                }catch
-//                {
-//
-//                }
-            }else{
-                print("error occured")
+            case .failure(let error):
+                print(error)
             }
         }
     }

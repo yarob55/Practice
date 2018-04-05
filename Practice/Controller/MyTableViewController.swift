@@ -10,9 +10,20 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
 
+    var posts = [Post]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let baseUrl = "https://jsonplaceholder.typicode.com"
+        let postsUrl = "/posts"
+        
+        print("started")
+        let request = PostRequest()
+        request.request(url: baseUrl+postsUrl)
+        { (posts) in
+            self.posts = posts
+            self.tableView.reloadData()
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -39,7 +50,8 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        //return posts.count
+        return 40
     }
 
     
@@ -47,7 +59,10 @@ class MyTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! CustomTableViewCell
 
         // Configure the cell...
-
+        
+        //cell.setup(thePost:posts[indexPath.row])
+        
+        cell.setupColor(index: indexPath.row)
         return cell
     }
  

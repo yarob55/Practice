@@ -17,20 +17,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var shadow:CGFloat = 0
-        {
-        didSet{
-            layer.masksToBounds = false
-            layer.shadowColor = UIColor.black.cgColor
-            layer.shadowOpacity = 0.5
-            layer.shadowOffset = CGSize(width: -1, height: 1)
-            layer.shadowRadius = 1
-            
-            layer.shadowPath = UIBezierPath(rect: bounds).cgPath
-            layer.shouldRasterize = true
-            layer.rasterizationScale = false ? UIScreen.main.scale : 1
-        }
-    }
+    
     
     
     @IBInspectable var yShadow:CGFloat = 0
@@ -69,18 +56,6 @@ import UIKit
         }
     }
     
-    @IBInspectable var shadowWidth:CGFloat = 0
-        {
-        didSet{
-            self.layer.shadowColor = UIColor.gray.cgColor
-            self.layer.shadowOpacity = 1
-            self.layer.shadowOffset = CGSize(width: 0, height: 10)
-            self.layer.shadowRadius = 2
-            self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-            
-            self.layer.shouldRasterize = true
-        }
-    }
     
     
 

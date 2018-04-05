@@ -7,14 +7,7 @@
 //
 
 
-struct Post:Decodable
-{
-    let userId:Int
-    let id:Int
-    let title:String
-    let body:String
-    
-}
+
 
 import UIKit
 import Alamofire
@@ -31,7 +24,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //testing get :
-        postRequest.request(url : baseUrl+postsUrl)
+//        postRequest.request(url : baseUrl+postsUrl)
         
         //testing post :
         let params = ["title" : "hello yarob :)","body":"hhhhh"]
